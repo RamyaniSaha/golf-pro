@@ -15,6 +15,11 @@
     width: 90%;
     margin: auto;
   }
+  .navbar{
+    display: flex !important;
+    justify-content: space-between !important;
+    column-gap: 40% !important;
+  }
   .navbar-brand {
     font-size: 28px !important;
     font-weight: 600;
@@ -26,9 +31,6 @@
     font-size: 17px;
     padding-left: 10px;
   }
- .navbar-nav{
-  padding-left: 60%;
- }
   
   .navbar-collapse{
     background-color: #7ba010;
@@ -427,6 +429,9 @@
       gap: 10% !important;
       justify-content: space-between;
     }
+    .btn{
+      margin-top: 6%;
+    }
   }
   @media(max-width:570px){
     .containt{
@@ -434,7 +439,8 @@
       left: 1%;
     }
     .join-box{
-      left: 6%;
+      left: 4%;
+      right: 4%;
     }
     .foot-bx1{
       gap: 20% !important;
