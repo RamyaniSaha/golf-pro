@@ -10,6 +10,7 @@
     height: auto;
     background-color: #7ba010;
   }
+
   .banner-content {
     width: 90%;
     margin: auto;
@@ -25,6 +26,9 @@
     font-size: 17px;
     padding-left: 10px;
   }
+ .navbar-nav{
+  padding-left: 60%;
+ }
   
   .navbar-collapse{
     background-color: #7ba010;
