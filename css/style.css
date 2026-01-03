@@ -37,7 +37,7 @@
   }
   .sticky{
     position: fixed;
-    top: 0;
+    top: 0 !important;
     left: 0;
     z-index: 999;
   }
