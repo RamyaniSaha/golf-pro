@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
   }
   
   header {
@@ -18,7 +17,7 @@
   .navbar{
     display: flex !important;
     justify-content: space-between !important;
-    column-gap: 40% !important;
+    column-gap: 38% !important;
   }
   .navbar-brand {
     font-size: 28px !important;
@@ -60,8 +59,6 @@
   }
   
   .containt{
-    padding-top: 12%;
-    left: 32%;
     color: white;
   }
   .golftext{
@@ -135,6 +132,7 @@
   }
   .about-txt{
     color: gray;
+    text-align: justify;
   }
   .about-title1{
     font-size: 20px;
@@ -154,7 +152,7 @@
   }
   .icon-box i:hover{
     color: white;
-    border: none;
+    border: 1px solid #f5b000;
     background-color: #f5b000;
     cursor: pointer;
   }
@@ -197,9 +195,6 @@
     background-color: rgba(0, 0, 0, 0.404);
   }
   .join-box{
-    position: absolute;
-    top: 14%;
-    left: 30%;
     border: 1px solid white;
     background-color: white;
     padding: 68px 68px;
@@ -217,7 +212,6 @@
     font-weight: 700;
   }
   .join-button{
-    margin-left: 28% !important;
     font-weight: 600;
     padding: 12px 48px;
     padding-left: 48px;
@@ -257,7 +251,7 @@
   }
   
   .meet-box{
-    margin-top: 10%;
+    margin-top: 6%;
     gap: 60px !important;
   }
   
@@ -272,6 +266,7 @@
   }
   .meetbx-text{
     font-size: 17px;
+    text-align: justify;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.637);
     line-height: 28px;
@@ -309,13 +304,23 @@
     width: 84%;
     padding-bottom: 20px;
   }
+
   .op-list{
     padding-top: 8%;
     color: rgba(197, 196, 196, 0.774);
     list-style: none;
     line-height: 38px;
   }
+
+   .op-list2{
+    margin-left: -1.8em;
+    padding-top: 8%;
+    color: rgba(197, 196, 196, 0.774);
+    list-style: none;
+    line-height: 38px;
+  }
   .op-list1{
+    margin-left: -0.6em;
     color: rgba(197, 196, 196, 0.774);
     list-style: none;
     line-height: 38px;
@@ -337,29 +342,38 @@
     width: 85%;
   }
   .form-control{
-    padding: 13px 10px;
+    padding: 13px 20px;
   }
   .btn{
     background-color: #7ba010;
-    padding: 13px 68px;
+    width: 85%;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     color: white;
   }
   .btn:hover{
     background-color: #f5b000;
+    color: white;
   }
   
   .footer-copyright{
     margin-top: 7%;
     width: 100%;
-    height: 10vh;
+    height: auto;
     border: 1px solid black;
     border: none;
-    padding: 14px 160px;
     background-color: rgba(0, 0, 0, 0.301);
     color: white;
+
   }
+
+  .foot-bx1{
+   width: 96%;
+   gap: 39.6%;
+  }
+
   .icon-bx{
     list-style: none;
     letter-spacing: 4px;
@@ -367,7 +381,7 @@
   .icon-bx i{
     font-size: 14px;
     margin-left: 10px;
-    padding: 8px 8px;
+    padding: 8px 8px 8px 10px;
     border: 1px solid black;
     border: none;
     border-radius: 4px;
@@ -399,7 +413,48 @@
     border: none;
   }
   
+  @media only screen and (max-width: 1080px) and (min-width: 992px){
+    .navbar{
+     column-gap: 28% !important;
+    }
+   .nav-item {
+     font-size: 15px;
+    }
+   .golftext{
+     font-size: 50px;
+    }
+   .golftext2{
+     font-size: 16px;
+    }
+   .golf-button{
+     padding: 10px 30px;
+     font-size: 18px;
+    }
+   .about-title{
+     font-size: 38px;
+     padding-top: 4%;
+    }
+    .meetbx-text{
+     font-size: 15px;
+    }
+   .meetbx-img{
+     width: 18%;
+    }
+    .btn{
+      padding: 13px 52px !important;
+    }
+   .foot-bx1{
+     gap: 34%;
+    }
+    .footbx-text{
+      font-size: 15px;
+    }
+
+  }
+
   @media(max-width:991px) {
+  
+  
     .containt{
       left: 20%;
     }
@@ -434,6 +489,12 @@
     }
   }
   @media(max-width:570px){
+    .sticky{
+     position: fixed;
+     top: 2em;
+     left: 0;
+     z-index: 999;
+    }
     .containt{
       top: 8%;
       left: 1%;

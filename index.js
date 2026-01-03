@@ -1,7 +1,7 @@
 let toTop = document.getElementById("totop");
 
 window.addEventListener("scroll", () => {
-  if(document.body.scrollTop >100 || document.documentElement.scrollTop>100){
+  if(document.body.scrollTop >200 || document.documentElement.scrollTop>200){
     toTop.style = "display:blck";
   }
   else{
