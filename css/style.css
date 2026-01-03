@@ -503,9 +503,6 @@
     }
   }
   @media(max-width:470px){
-    .sticky{
-     position: sticky;
-    }
     .join-box{
       top: 20%;
       left: -2%;
