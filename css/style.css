@@ -510,8 +510,8 @@
   }
   @media(max-width:470px){
     .sticky{
-     position: fixed;
-     top: 2em;
+     position: sticky;
+     top: 0em;
      left: 0;
      z-index: 999;
     }
