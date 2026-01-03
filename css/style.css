@@ -505,9 +505,6 @@
   @media(max-width:470px){
     .sticky{
      position: sticky;
-     top: 0;
-     left: 0;
-     z-index: 999;
     }
     .join-box{
       top: 20%;
