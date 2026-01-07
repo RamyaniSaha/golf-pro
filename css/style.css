@@ -794,7 +794,14 @@
     .navbar-collapse{
       height: auto;
     }
+    .banner-pic{
+      height: 78vh;
+    }
+    .overlay{
+      height: 78vh;
+    }
     .golftext{
+      width: 100%;
       font-size: 24.8px;
     }
     .golftext2{
@@ -808,7 +815,7 @@
     }
     .about-img{
       width: 100%;
-      height: 380px;
+      height: auto;
     }
     .about-title{
       font-size: 24px;
@@ -926,9 +933,13 @@
       height: auto;
     }
     .banner-pic{
-      height: 60vh;
+      height: 78vh;
+    }
+    .overlay{
+      height: 78vh;
     }
     .golftext{
+      width: 100%;
       font-size: 24.8px;
     }
     .golftext2{
