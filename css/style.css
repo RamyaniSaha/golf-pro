@@ -798,7 +798,7 @@
       height: 78vh;
     }
     .overlay{
-      height: 78vh;
+      height: 78vh !important;
     }
     .golftext{
       width: 100%;
@@ -837,6 +837,12 @@
     }
     .icon-text1{
       font-size: 14px;
+    }
+    .join-pic{
+      height: 60vh;
+    }
+    .join-overlay{
+      height: 60vh;
     }
     .join-box{
       padding: 48px 18px;
@@ -936,7 +942,7 @@
       height: 78vh;
     }
     .overlay{
-      height: 78vh;
+      height: 78vh !important;
     }
     .golftext{
       width: 100%;
@@ -975,6 +981,12 @@
     }
     .icon-text1{
       font-size: 14px;
+    }
+    .join-pic{
+      height: 60vh;
+    }
+    .join-overlay{
+      height: 60vh;
     }
     .join-box{
       padding: 48px 18px;
