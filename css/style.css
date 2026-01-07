@@ -844,7 +844,7 @@
       height: 60vh;
     }
     .join-box{
-      position: absolute;
+      position: absolute !important;
       top: 46% !important;
       padding: 48px 18px;
       width: 60%;
@@ -982,14 +982,12 @@
       font-size: 14px;
     }
     .join-pic{
-      height: 60vh !important;
+      height: 50vh !important;
     }
     .join-overlay{
-      height: 60vh !important;
+      height: 50vh !important;
     }
     .join-box{
-      position: absolute;
-      top: 46% !important;
       padding: 48px 18px;
       width: 80%;
     }
