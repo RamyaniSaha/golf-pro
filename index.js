@@ -15,15 +15,13 @@ let backToTop = () =>{
 }
 
 
-
-const navPosition = document.getElementById("nav-position");
-
-
-const monitorNavposition = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        let prevElem = entry.target.previousElementSibling;
-        prevElem.classList.toggle('sticky', !entry.isIntersecting)
-    })
-})
-
-monitorNavposition.observe(navPosition);
+$(document).ready(function(){
+        var num = 100;
+       $(window).bind('scroll',function(){
+        if ($(window).scrollTop() >= num){
+          $("navbar").addClass('sticky').css('background-color','#ffff');
+        }else{
+          $("navbar").removeClass('sticky').css('background-color','transparent');
+        }
+       })
+      })

@@ -11,7 +11,7 @@
   }
 
   .banner-content {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .navbar{
@@ -23,6 +23,10 @@
   .navbar-brand {
     font-size: 28px !important;
     font-weight: 600;
+  }
+  .nav-text{
+    position: relative;
+    left: 6%;
   }
   .nav-text img {
     padding-right: 10px;
@@ -37,12 +41,17 @@
     position: static;
   }
   .sticky{
+    width: 100%;
+    height: auto;
+    background-color: #7ba010;
     position: fixed;
     top: 0 !important;
     left: 0;
     z-index: 99999 !important;
+    animation: slideFade 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   }
-  
+
   .banner-pic{
     width: 100%;
     height: 90vh;
@@ -199,11 +208,13 @@
     border: 1px solid white;
     background-color: white;
     padding: 68px 68px;
+    border-radius: 8px;
   }
   .join-text{
-    position: absolute;
+    position: relative;
     top: 14%;
-    left: 36%;
+    text-align: center;
+    text-transform: uppercase;
   }
   .join-text1{
     text-align: center;
@@ -413,6 +424,17 @@
     outline: none;
     border: none;
   }
+
+  @keyframes slideFade{
+    from{
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   
   @media only screen and (max-width: 1080px) and (min-width: 992px){
     .navbar{
@@ -453,26 +475,42 @@
 
   }
 
-  @media(max-width:991px) {
+  @media only screen and (max-width: 991.8px) and (min-width: 880px){
   
-  
+    .navbar-toggler{
+      position: relative;
+      right: 4em;
+    }
+    .navbar-nav{
+      position: relative;
+      left: 6em;
+      top: 0.1em;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 48px;
+    }
+    .golftext2{
+      font-size: 18px;
+    }
     .containt{
       left: 20%;
     }
-    .p-2{
-      margin-left: -100px;
-    }
+   
     .about-img{
-      width: 109%;
+      width: 100%;
     }
-    .p-5{
-      margin-right: -4%;
-      padding-right: -6%;
-      padding-left: -6%;
+    .about-title{
+      text-align: center;
     }
-    .join-box{
-      top: 12%;
-      left: 24%;
+    
+    .join-text1{
+      font-size: 24px;
+    }
+    .meet-text{
+      font-size: 38px;
     }
     footer{
       height: auto;
@@ -488,48 +526,790 @@
     .btn{
       margin-top: 6%;
     }
-  }
-  @media(max-width:570px){
-    .containt{
-      top: 8%;
-      left: 1%;
-    }
-    .join-box{
-      left: 4%;
-      right: 4%;
-    }
-    .foot-bx1{
-      gap: 20% !important;
-      flex-wrap: wrap;
+    .footbx-text{
+      font-size: 15px;
     }
   }
-  @media(max-width:470px){
-    .join-box{
-      top: 20%;
-      left: -2%;
+
+  @media only screen and (max-width: 879.9px) and (min-width: 768px){
+    .navbar-toggler{
+      position: relative;
+      right: 4em;
     }
-  }
-  @media(max-width:385px){
-    .footer-copyright{
-      height: 16vh;
+    .navbar-nav{
+      position: relative;
+      left: 5em;
+      top: 0.1em;
     }
-  }
-  @media(max-width:295px){
-    .containt{
-      top: 4%;
-      left: 1%;
+    .navbar-collapse{
+      height: auto;
     }
-    .join-box{
-      top: 10%;
-      left: -2%;
+    .golftext{
+      font-size: 40px;
+    }
+    .golftext2{
+      font-size: 16px;
+    }
+    .about-img{
+      width: 100%;
+    }
+    .about-title{
+      text-align: center;
     }
     .join-text{
-      left: 26%;
+      font-size: 16px;
+    }
+    .join-text1{
+      font-size: 20px;
+    }
+    .meet-text{
+      font-size: 38px;
+    }
+    .foot-bx1{
+      gap: 18%;
+    }
+    .footbx-text{
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 767.9px) and (min-width: 620px){
+    .navbar-toggler{
+      position: relative;
+      right: 3em;
+    }
+    .navbar-toggler-icon{
+      font-size: 18px;
+    }
+    .navbar-nav{
+      position: relative;
+      left: 4.6em;
+      top: 0.1em;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 32.8px;
+    }
+    .golftext2{
+      font-size: 15px;
+    }
+    .golf-button{
+      font-size: 16px;
+    }
+    .about-img{
+      width: 100%;
+    }
+    .about-title{
+      font-size: 31px;
+      text-align: center;
+    }
+    .about-title1{
+      font-size: 18px;
+      text-align: center;
+    }
+    .icon-box{
+      position: relative;
+      padding-left: 1em;
+    }
+    .join-box{
+      padding: 48px 44px;
+      width: 60%;
+    }
+    .join-text{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .join-text1{
+      font-size: 18px;
+      line-height: 30px;
     }
     .join-button{
-      margin-left: 6% !important;
+      padding: 8px 48px;
+      font-size: 15px;
+      margin-top: 1.4em !important;
     }
-    .icon-bx i{
-      margin-left: 2px;
+    .meet-text{
+      font-size: 31px;
+    }
+    .meet-text1{
+      font-size: 16px;
+    }
+    .meetbx-text{
+      font-size: 15px;
+    }
+    .meetbx-img{
+      width: 10%;
+      height: 46px;
+    }
+    .foot-bx1{
+      flex-wrap: wrap;
+    }
+    .icon-bx{
+      position: relative;
+      left: -0.4em;
+    }
+    .footbx-text{
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 619.9px) and (min-width: 571px){
+    .navbar-toggler{
+      position: relative;
+      right: 3em;
+    }
+    .navbar-toggler-icon{
+      font-size: 18px;
+    }
+    .navbar-nav{
+      width: 80%;
+      position: relative;
+      left: 4.6em;
+      top: 0.1em;
+    }
+    .dropdown-menu{
+      width: 90%;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 30px;
+    }
+    .golftext2{
+      font-size: 15px;
+    }
+    .golf-button{
+      font-size: 16px;
+    }
+    .about-img{
+      width: 100%;
+    }
+    .about-title{
+      font-size: 31px;
+      text-align: center;
+    }
+    .about-title1{
+      font-size: 18px;
+      text-align: center;
+    }
+    .about-txt{
+      font-size: 15px;
+    }
+    .icon-box{
+      position: relative;
+      padding-left: 2em;
+    }
+    .join-box{
+      padding: 48px 48px;
+      width: 60%;
+    }
+    .join-text{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .join-text1{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .join-button{
+      padding: 8px 8px;
+      width: 60%;
+      font-size: 14px;
+      margin-top: 1.4em !important;
+    }
+    .meet-text{
+      font-size: 31px;
+    }
+    .meet-text1{
+      font-size: 15px;
+    }
+    .meetbx-text{
+      font-size: 14px;
+    }
+    .meet-box1{
+      width: 90%;
+      margin-left: 1.6em;
+    }
+    .meetbx-img{
+      width: 8%;
+      height: 40px;
+    }
+    .foot-box1{
+      padding-left: 4em;
+    }
+    .op-list2, .op-list{
+      padding-top: 1%;
+    }
+    .op-list1 .container{
+      padding-top: 1% !important;
+    }
+    .foot-text2{
+      margin-top: 4%;
+    }
+    .foot-bx1{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .icon-bx{
+      position: relative;
+      left: -0.4em;
+    }
+    .footbx-text{
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 570.9px) and (min-width: 470px){
+   .navbar-toggler{
+      position: relative;
+      right: 2em;
+    }
+    .navbar-brand{
+      font-size: 24px !important;
+    }
+    .navbar-brand img{
+      width: 22%;
+    }
+    .nav-item{
+      font-size: 15px;
+    }
+    .dropdown-item{
+      font-size: 14px;
+    }
+    .navbar-toggler-icon{
+      font-size: 14px;
+    }
+    .navbar-nav{
+      width: 80%;
+      position: relative;
+      left: 3.6em;
+      top: 0.1em;
+    }
+    .dropdown-menu{
+      width: 90%;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 24.8px;
+    }
+    .golftext2{
+      font-size: 14px;
+    }
+    .golf-button{
+      font-size: 15px;
+    }
+    .golf-train{
+      font-size: 20px;
+    }
+    .about-img{
+      width: 100%;
+      height: 380px;
+    }
+    .about-title{
+      font-size: 24px;
+      text-align: center;
+    }
+    .about-title1{
+      font-size: 18px;
+      text-align: center;
+    }
+    .about-txt{
+      font-size: 15px;
+    }
+    .icon-box{
+      position: relative;
+      padding-left: 1.6em;
+    }
+    .icon-text{
+      font-size: 18px;
+    }
+    .icon-text1{
+      font-size: 14px;
+    }
+    .join-box{
+      padding: 48px 18px;
+      width: 60%;
+    }
+    .join-text{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .join-text1{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .join-button{
+      padding: 8px 38px;
+      width: 60%;
+      font-size: 14px;
+      margin-top: 1.4em !important;
+    }
+    .meet-text{
+      font-size: 24px;
+    }
+    .meet-text1{
+      font-size: 14px;
+      padding: 0.6em 0.8em 0 0.8em;
+    }
+    .meetbx-text{
+      font-size: 14px;
+    }
+    .meet-box1{
+      width: 90%;
+      margin-left: 1.4em;
+    }
+    .meetbx-img{
+      width: 10%;
+      height: 40px;
+    }
+    .foot-box1{
+      padding-left: 2em;
+    }
+    .op-list2, .op-list{
+      padding-top: 1%;
+      font-size: 15px;
+    }
+    .op-list1 .container{
+      padding-top: 1% !important;
+      font-size: 15px;
+    }
+    .foot-text2{
+      margin-top: 4%;
+    }
+    .foot-bx1{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .icon-bx{
+      position: relative;
+      left: -0.4em;
+    }
+    .footbx-text{
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 469.9px) and (min-width: 340px){
+    .navbar-toggler{
+      position: relative;
+      right: 2em;
+    }
+    .navbar-brand{
+      font-size: 24px !important;
+    }
+    .navbar-brand img{
+      width: 22%;
+    }
+    .nav-item{
+      font-size: 15px;
+    }
+    .dropdown-item{
+      font-size: 14px;
+    }
+    .navbar-toggler-icon{
+      font-size: 14px;
+    }
+    .navbar-nav{
+      width: 80%;
+      position: relative;
+      left: 3em;
+      top: 0.1em;
+    }
+    .dropdown-menu{
+      width: 90%;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 24.8px;
+    }
+    .golftext2{
+      font-size: 14px;
+    }
+    .golf-button{
+      font-size: 15px;
+    }
+    .golf-train{
+      font-size: 20px;
+    }
+    .about-img{
+      width: 100%;
+      height: 380px;
+    }
+    .about-title{
+      font-size: 24px;
+      text-align: center;
+    }
+    .about-title1{
+      font-size: 18px;
+      text-align: center;
+    }
+    .about-txt{
+      font-size: 15px;
+    }
+    .icon-box{
+      position: relative;
+      padding-left: 1em;
+    }
+    .icon-text{
+      font-size: 18px;
+    }
+    .icon-text1{
+      font-size: 14px;
+    }
+    .join-box{
+      padding: 48px 18px;
+      width: 80%;
+    }
+    .join-text{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .join-text1{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .join-button{
+      padding: 8px 8px;
+      width: 60%;
+      font-size: 14px;
+      margin-top: 1.4em !important;
+    }
+    .meet-text{
+      font-size: 24px;
+    }
+    .meet-text1{
+      font-size: 14px;
+      padding: 0.6em 0.8em 0 0.8em;
+    }
+    .meetbx-text{
+      font-size: 14px;
+    }
+    .meet-box1{
+      width: 90%;
+      margin-left: 1em;
+    }
+    .meetbx-img{
+      width: 14%;
+      height: 40px;
+    }
+    .foot-box1{
+      padding-left: 1em;
+    }
+    .op-list2, .op-list{
+      padding-top: 1%;
+      font-size: 15px;
+    }
+    .op-list1 .container{
+      padding-top: 1% !important;
+      font-size: 15px;
+    }
+    .foot-text2{
+      margin-top: 4%;
+    }
+    .foot-bx1{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .icon-bx{
+      position: relative;
+      left: -1.4em;
+    }
+    .footbx-text{
+      font-size: 14px;
+    }
+  }
+ 
+  @media only screen and (max-width: 339.9px) and (min-width: 260px){
+   .navbar-toggler{
+      position: relative;
+      right: 1em;
+    }
+    .navbar-brand{
+      font-size: 18px !important;
+      gap: 0;
+    }
+    .navbar-brand img{
+      width: 18%;
+      padding-right: 4px;
+    }
+    .nav-item{
+      font-size: 12px;
+    }
+    .dropdown-item{
+      font-size: 14px;
+    }
+    .navbar-toggler-icon{
+      font-size: 14px;
+    }
+    .navbar-nav{
+      width: 80%;
+      position: relative;
+      left: 2em;
+      top: 0.1em;
+    }
+    .dropdown-menu{
+      width: 90%;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 18px;
+    }
+    .golftext2{
+      font-size: 13px;
+    }
+    .golf-button{
+      font-size: 14px;
+      width: 100%;
+      padding: 10px 0;
+    }
+    .golf-train{
+      font-size: 16px;
+    }
+    .golf-train1{
+      font-size: 12px;
+    }
+    .about-img{
+      width: 100%;
+      height: auto;
+    }
+    .about-title{
+      font-size: 18px;
+      text-align: center;
+    }
+    .about-title1{
+      font-size: 15px;
+      text-align: center;
+    }
+    .about-txt{
+      font-size: 12px;
+    }
+    .icon-box{
+      position: relative;
+      padding-left: 0.8em;
+    }
+    .icon-text{
+      font-size: 15px;
+    }
+    .icon-text1{
+      font-size: 12px;
+    }
+    .join-box{
+      padding: 48px 18px;
+      width: 80%;
+    }
+    .join-text{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .join-text1{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .join-button{
+      padding: 8px 8px;
+      width: 60%;
+      font-size: 13px;
+      margin-top: 1.4em !important;
+    }
+    .meet-text{
+      font-size: 20px;
+    }
+    .meet-text1{
+      font-size: 13px;
+      padding: 0.6em 0.8em 0 0.8em;
+    }
+    .meetbx-text{
+      font-size: 12px;
+    }
+    .meet-box1{
+      width: 90%;
+      margin-left: 0.8em;
+    }
+    .meetbx-img{
+      width: 14%;
+      height: 40px;
+    }
+    .foot-box1{
+      padding-left: 1em;
+    }
+    .op-list2, .op-list{
+      padding-top: 1%;
+      font-size: 14px;
+    }
+    .op-list1 .container{
+      padding-top: 1% !important;
+      font-size: 14px;
+    }
+    .foot-text1{
+      font-size: 15px;
+    }
+    .foot-text2{
+      margin-top: 4%;
+      font-size: 15px;
+    }
+    .foot-bx1{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .icon-bx{
+      position: relative;
+      left: -1.4em;
+    }
+    .footbx-text{
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 266.8px){
+    .navbar{
+      column-gap: 0 !important;
+    }
+    .navbar-toggler{
+      position: relative;
+      right: 1em;
+    }
+    .navbar-brand{
+      font-size: 18px !important;
+      gap: 0;
+    }
+    .navbar-brand img{
+      width: 18%;
+      padding-right: 4px;
+    }
+    .nav-item{
+      font-size: 12px;
+    }
+    .dropdown-item{
+      font-size: 14px;
+    }
+    .navbar-toggler-icon{
+      font-size: 14px;
+    }
+    .navbar-nav{
+      width: 80%;
+      position: relative;
+      left: 2em;
+      top: 0.1em;
+    }
+    .dropdown-menu{
+      width: 90%;
+    }
+    .navbar-collapse{
+      height: auto;
+    }
+    .golftext{
+      font-size: 18px;
+    }
+    .golftext2{
+      font-size: 13px;
+    }
+    .golf-button{
+      font-size: 14px;
+      width: 100%;
+      padding: 10px 0;
+    }
+    .golf-train{
+      font-size: 16px;
+    }
+    .golf-train1{
+      font-size: 12px;
+    }
+    .about-img{
+      width: 100%;
+      height: auto;
+    }
+    .about-title{
+      font-size: 18px;
+      text-align: center;
+    }
+    .about-title1{
+      font-size: 15px;
+      text-align: center;
+    }
+    .about-txt{
+      font-size: 12px;
+    }
+    .icon-box{
+      position: relative;
+      padding-left: 0.8em;
+    }
+    .icon-text{
+      font-size: 15px;
+    }
+    .icon-text1{
+      font-size: 12px;
+    }
+    .join-box{
+      padding: 48px 18px;
+      width: 80%;
+    }
+    .join-text{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .join-text1{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .join-button{
+      padding: 8px 8px;
+      width: 60%;
+      font-size: 13px;
+      margin-top: 1.4em !important;
+    }
+    .meet-text{
+      font-size: 20px;
+    }
+    .meet-text1{
+      font-size: 13px;
+      padding: 0.6em 0.8em 0 0.8em;
+    }
+    .meetbx-text{
+      font-size: 12px;
+    }
+    .meet-box1{
+      width: 90%;
+      margin-left: 0.8em;
+    }
+    .meetbx-img{
+      width: 14%;
+      height: 40px;
+    }
+    .foot-box1{
+      padding-left: 1em;
+    }
+    .op-list2, .op-list{
+      padding-top: 1%;
+      font-size: 14px;
+    }
+    .op-list1 .container{
+      padding-top: 1% !important;
+      font-size: 14px;
+    }
+    .foot-text1{
+      font-size: 15px;
+    }
+    .foot-text2{
+      margin-top: 4%;
+      font-size: 15px;
+    }
+    .foot-bx1{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .icon-bx{
+      position: relative;
+      left: -1.4em;
+    }
+    .footbx-text{
+      font-size: 12px;
     }
   }
