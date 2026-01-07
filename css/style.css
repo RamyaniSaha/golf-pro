@@ -794,6 +794,9 @@
     .navbar-collapse{
       height: auto;
     }
+    .banner-pic {
+       height: 78vh !important;
+    }
     .banner-pic .overlay{
         height: 78vh !important;
     }
@@ -938,6 +941,9 @@
     }
     .navbar-collapse{
       height: auto;
+    }
+    .banner-pic {
+       height: 78vh !important;
     }
     .banner-pic .overlay{
         height: 78vh !important;
