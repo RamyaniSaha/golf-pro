@@ -795,10 +795,10 @@
       height: auto;
     }
     .banner-pic{
-      height: auto !important;
+      height: 58vh !important;
     }
     .banner-pic .overlay{
-      height: auto !important;
+      height: 58vh !important;
     }
     .banner-pic .containt{
       position: absolute !important;
@@ -943,10 +943,10 @@
       height: auto;
     }
     .banner-pic{
-      height: auto !important;
+      height: 58vh !important;
     }
     .banner-pic .overlay{
-      height: auto !important;
+      height: 58vh !important;
     }
     .banner-pic .containt{
       position: absolute !important;
