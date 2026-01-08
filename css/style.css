@@ -893,7 +893,7 @@
       font-size: 15px;
     }
     .foot-text2{
-      margin-top: 4%;
+      margin-top: 1%;
     }
     .foot-bx1{
       flex-wrap: wrap;
@@ -1041,9 +1041,11 @@
       padding-top: 1% !important;
       font-size: 15px;
     }
-    .foot-text2{
-      margin-top: 2%;
+
+     .foot-text2{
+      margin-top: 1%;
     }
+
     .foot-bx1{
       flex-wrap: wrap;
       text-align: center;
@@ -1207,7 +1209,7 @@
       font-size: 15px;
     }
     .foot-text2{
-      margin-top: 4%;
+      margin-top: 2%;
       font-size: 15px;
     }
     .foot-bx1{
@@ -1365,7 +1367,7 @@
       font-size: 15px;
     }
     .foot-text2{
-      margin-top: 4%;
+      margin-top: 2%;
       font-size: 15px;
     }
     .foot-bx1{
