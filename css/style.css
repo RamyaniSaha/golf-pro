@@ -797,6 +797,7 @@
 
     .banner-pic .containt{
       position: absolute !important;
+      width: 80% !important;
       margin-left: 2em !important;
     }
     .golftext{
@@ -940,6 +941,7 @@
     
     .banner-pic .containt{
       position: absolute !important;
+      width: 80% !important;
       margin-left: 2em !important;
     }
     .golftext{
