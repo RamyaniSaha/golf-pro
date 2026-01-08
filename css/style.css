@@ -828,10 +828,7 @@
     }
     .icon-box{
       position: relative;
-      padding-left: 1.6em;
-    }
-    .icon-text{
-      font-size: 18px;
+      padding: 1.4em;
     }
     .icon-text1{
       font-size: 14px;
@@ -847,11 +844,11 @@
       width: 60%;
     }
     .join-text{
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 0;
     }
     .join-text1{
-      font-size: 18px;
+      font-size: 24px;
       line-height: 28px;
     }
     .join-button{
@@ -977,13 +974,10 @@
     }
     .icon-box{
       position: relative;
-      padding-left: 1em;
-    }
-    .icon-text{
-      font-size: 18px;
+      padding-left: 1.4em;
     }
     .icon-text1{
-      font-size: 14px;
+      font-size: 15px;
     }
     .join-pic{
       height: 50vh !important;
@@ -996,12 +990,12 @@
       width: 80%;
     }
     .join-text{
-      font-size: 12px;
+      font-size: 16px;
       margin-bottom: 0;
     }
     .join-text1{
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 24px;
+      line-height: 28px;
     }
     .join-button{
       padding: 8px 8px;
