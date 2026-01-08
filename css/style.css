@@ -794,15 +794,10 @@
     .navbar-collapse{
       height: auto;
     }
-    .banner-pic{
-      height: 58vh !important;
-    }
-    .banner-pic .overlay{
-      height: 58vh !important;
-    }
+
     .banner-pic .containt{
       position: absolute !important;
-      margin-left: -10em !important;
+      margin-left: -4em !important;
     }
     .golftext{
       width: 100%;
@@ -942,15 +937,10 @@
     .navbar-collapse{
       height: auto;
     }
-    .banner-pic{
-      height: 58vh !important;
-    }
-    .banner-pic .overlay{
-      height: 58vh !important;
-    }
+    
     .banner-pic .containt{
       position: absolute !important;
-      margin-left: -10em !important;
+      margin-left: -4em !important;
     }
     .golftext{
       width: 100%;
