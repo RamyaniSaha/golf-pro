@@ -943,11 +943,11 @@
     
     .banner-pic .containt{
       width: 100% !important;
-      padding: 2em !important;
+      padding: 1.4em !important;
     }
     .golftext{
       width: 100%;
-      font-size: 38px;
+      font-size: 36px;
     }
     .golftext2{
       font-size: 16px;
@@ -963,11 +963,11 @@
       height: auto;
     }
     .about-title{
-      font-size: 24px;
+      font-size: 34px;
       text-align: center;
     }
     .about-title1{
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
     .about-txt{
@@ -984,10 +984,10 @@
       font-size: 14px;
     }
     .join-pic{
-      height: 60vh !important;
+      height: 56vh !important;
     }
     .join-overlay{
-      height: 60vh !important;
+      height: 56vh !important;
     }
     .join-box{
       padding: 48px 18px;
@@ -1026,6 +1026,7 @@
       height: 40px;
     }
     .foot-box1{
+      width: 100%;
       padding-left: 1em;
     }
     .op-list2, .op-list{
