@@ -831,13 +831,13 @@
       padding: 1.4em;
     }
     .icon-text1{
-      font-size: 14px;
+      font-size: 15px;
     }
     .join-pic{
-      height: 50vh !important;
+      height: 54vh !important;
     }
     .join-overlay{
-      height: 50vh;
+      height: 54vh;
     }
     .join-box{
       padding: 48px 18px;
@@ -861,11 +861,11 @@
       font-size: 34px;
     }
     .meet-text1{
-      font-size: 16px;
+      font-size: 15px;
       padding: 0.6em 0.8em 0 0.8em;
     }
     .meetbx-text{
-      font-size: 14px;
+      font-size: 16px;
     }
     .meet-box1{
       width: 90%;
@@ -880,6 +880,9 @@
     }
     .foot-box1{
       padding-left: 1.4em;
+    }
+    .form-group{
+      width: 100%;
     }
     .op-list2, .op-list{
       padding-top: 1%;
@@ -1007,11 +1010,11 @@
       font-size: 34px;
     }
     .meet-text1{
-      font-size: 16px;
+      font-size: 15px;
       padding: 0.6em 0.8em 0 0.8em;
     }
     .meetbx-text{
-      font-size: 14px;
+      font-size: 16px;
     }
     .meet-box1{
       width: 90%;
@@ -1021,10 +1024,13 @@
       width: 14%;
       height: 48px;
     }
-    .foot-box1{
-      padding: 1.4em;
-    }
     .foot-text1{
+      width: 100%;
+    }
+    .foot-box1{
+      padding-left: 1.4em;
+    }
+    .form-group{
       width: 100%;
     }
     .op-list2, .op-list{
@@ -1036,7 +1042,7 @@
       font-size: 15px;
     }
     .foot-text2{
-      margin-top: 4%;
+      margin-top: 2%;
     }
     .foot-bx1{
       flex-wrap: wrap;
@@ -1180,8 +1186,14 @@
       width: 14%;
       height: 40px;
     }
+     .foot-text1{
+      width: 100%;
+    }
     .foot-box1{
       padding-left: 1em;
+    }
+    .form-group{
+      width: 100%;
     }
     .op-list2, .op-list{
       padding-top: 1%;
@@ -1332,8 +1344,14 @@
       width: 14%;
       height: 40px;
     }
+     .foot-text1{
+      width: 100%;
+    }
     .foot-box1{
       padding-left: 1em;
+    }
+    .form-group{
+      width: 100%;
     }
     .op-list2, .op-list{
       padding-top: 1%;
