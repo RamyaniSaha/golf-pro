@@ -796,14 +796,13 @@
     }
 
     .banner-pic{
-      height: 68vh;
+      height: 60vh;
     }
     .banner-pic .overlay{
-      height: 68vh;
+      height: 60vh;
     }
 
     .banner-pic .containt{
-      position: absolute !important;
       width: 100% !important;
       padding: 2em !important;
     }
@@ -947,15 +946,14 @@
     }
 
     .banner-pic{
-      height: 68vh;
+      height: 60vh;
     }
 
     .banner-pic .overlay{
-      height: 68vh;
+      height: 60vh;
     }
     
     .banner-pic .containt{
-      position: absolute !important;
       width: 100% !important;
       padding: 2em !important;
     }
@@ -1100,6 +1098,17 @@
     .navbar-collapse{
       height: auto;
     }
+    .banner-pic{
+      height: 60vh;
+    }
+    .banner-pic .overlay{
+      height: 60vh;
+    }
+
+    .banner-pic .containt{
+      width: 100% !important;
+      padding: 2em !important;
+    }
     .golftext{
       font-size: 18px;
     }
@@ -1141,6 +1150,12 @@
     }
     .icon-text1{
       font-size: 12px;
+    }
+     .join-pic{
+      height: 60vh !important;
+    }
+    .join-overlay{
+      height: 60vh !important;
     }
     .join-box{
       padding: 48px 18px;
@@ -1287,6 +1302,12 @@
     }
     .icon-text1{
       font-size: 12px;
+    }
+     .join-pic{
+      height: 60vh !important;
+    }
+    .join-overlay{
+      height: 60vh !important;
     }
     .join-box{
       padding: 48px 18px;
