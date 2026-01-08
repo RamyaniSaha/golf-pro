@@ -767,8 +767,8 @@
       position: relative;
       right: 2em;
     }
-    .navbar-brand{
-      font-size: 24px !important;
+    .nav-item{
+      font-size: 15px;
     }
     
     .dropdown-item{
@@ -837,22 +837,22 @@
       font-size: 14px;
     }
     .join-pic{
-      height: 56vh !important;
+      height: 50vh !important;
     }
     .join-overlay{
-      height: 56vh;
+      height: 50vh;
     }
     .join-box{
       padding: 48px 18px;
       width: 60%;
     }
     .join-text{
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 0;
     }
     .join-text1{
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 18px;
+      line-height: 28px;
     }
     .join-button{
       padding: 8px 38px;
@@ -879,7 +879,7 @@
       height: 48px;
     }
     .foot-box1{
-      width: 100%;
+      width: 100% !important;
       padding-left: 2em;
     }
     .op-list2, .op-list{
@@ -910,8 +910,8 @@
       position: relative;
       right: 2em;
     }
-    .navbar-brand{
-      font-size: 24px !important;
+    .nav-item{
+      font-size: 15px;
     }
     
     .dropdown-item{
@@ -1011,7 +1011,7 @@
       font-size: 24px;
     }
     .meet-text1{
-      font-size: 14px;
+      font-size: 15px;
       padding: 0.6em 0.8em 0 0.8em;
     }
     .meetbx-text{
@@ -1023,10 +1023,10 @@
     }
     .meetbx-img{
       width: 14%;
-      height: 40px;
+      height: 48px;
     }
     .foot-box1{
-      width: 100%;
+      width: 100% !important;
       padding-left: 1em;
     }
     .op-list2, .op-list{
