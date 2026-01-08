@@ -770,12 +770,7 @@
     .navbar-brand{
       font-size: 24px !important;
     }
-    .navbar-brand img{
-      width: 22%;
-    }
-    .nav-item{
-      font-size: 15px;
-    }
+    
     .dropdown-item{
       font-size: 14px;
     }
@@ -804,11 +799,11 @@
 
     .banner-pic .containt{
       width: 100% !important;
-      padding: 2em !important;
+      padding: 1.4em !important;
     }
     .golftext{
       width: 100%;
-      font-size: 38px;
+      font-size: 36px;
     }
     .golftext2{
       font-size: 16px;
@@ -816,19 +811,16 @@
     .golf-button{
       font-size: 16px;
     }
-    .golf-train{
-      font-size: 20px;
-    }
     .about-img{
       width: 100%;
       height: auto;
     }
     .about-title{
-      font-size: 24px;
+      font-size: 34px;
       text-align: center;
     }
     .about-title1{
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
     .about-txt{
@@ -845,10 +837,10 @@
       font-size: 14px;
     }
     .join-pic{
-      height: 60vh !important;
+      height: 56vh !important;
     }
     .join-overlay{
-      height: 60vh;
+      height: 56vh;
     }
     .join-box{
       padding: 48px 18px;
@@ -883,10 +875,11 @@
       margin-left: 1.4em;
     }
     .meetbx-img{
-      width: 10%;
-      height: 40px;
+      width: 12%;
+      height: 48px;
     }
     .foot-box1{
+      width: 100%;
       padding-left: 2em;
     }
     .op-list2, .op-list{
@@ -920,12 +913,7 @@
     .navbar-brand{
       font-size: 24px !important;
     }
-    .navbar-brand img{
-      width: 22%;
-    }
-    .nav-item{
-      font-size: 15px;
-    }
+    
     .dropdown-item{
       font-size: 14px;
     }
