@@ -795,14 +795,14 @@
       height: auto;
     }
     .banner-pic{
-      height: 78vh !important;
+      height: auto !important;
     }
     .banner-pic .overlay{
-      height: 78vh !important;
+      height: auto !important;
     }
     .banner-pic .containt{
       position: absolute !important;
-      top: 30% !important;
+      top: 40% !important;
     }
     .golftext{
       width: 100%;
@@ -943,10 +943,10 @@
       height: auto;
     }
     .banner-pic{
-      height: 78vh !important;
+      height: auto !important;
     }
     .banner-pic .overlay{
-      height: 78vh !important;
+      height: auto !important;
     }
     .banner-pic .containt{
       position: absolute !important;
