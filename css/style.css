@@ -795,6 +795,13 @@
       height: auto;
     }
 
+    .banner-pic{
+      height: 68vh;
+    }
+    .banner-pic .overlay{
+      height: 68vh;
+    }
+
     .banner-pic .containt{
       position: absolute !important;
       width: 100% !important;
@@ -937,6 +944,14 @@
     }
     .navbar-collapse{
       height: auto;
+    }
+
+    .banner-pic{
+      height: 68vh;
+    }
+
+    .banner-pic .overlay{
+      height: 68vh;
     }
     
     .banner-pic .containt{
