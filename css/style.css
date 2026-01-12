@@ -17,7 +17,7 @@
   .navbar{
     display: flex !important;
     justify-content: space-between !important;
-    column-gap: 38% !important;
+    column-gap: 48% !important;
     z-index: 99999 !important;
   }
   .navbar-brand {
@@ -283,6 +283,9 @@
     color: rgba(0, 0, 0, 0.637);
     line-height: 28px;
   }
+  .meet-t{
+    display: block;
+  }
   .meetbx-text1{
     font-size: 17px;
     font-weight: 400;
@@ -438,7 +441,7 @@
   
   @media only screen and (max-width: 1080px) and (min-width: 992px){
     .navbar{
-     column-gap: 28% !important;
+     column-gap: 40% !important;
     }
    .nav-item {
      font-size: 15px;
@@ -474,6 +477,20 @@
     }
 
   }
+  @media only screen and (max-width: 1024.6px) and (min-width: 992px){
+    .banner-pic{
+      height: 50vh;
+    }
+    .banner-pic .overlay{
+      height: 50vh;
+    }
+   .join-pic{
+      height: 50vh;
+    }
+    .join-overlay{
+      height: 50vh;
+    }
+  }
 
   @media only screen and (max-width: 991.8px) and (min-width: 880px){
   
@@ -498,6 +515,14 @@
     .containt{
       left: 20%;
     }
+
+    .banner-pic{
+      height: 60vh;
+    }
+
+    .banner-pic .overlay{
+      height: 60vh;
+    }
    
     .about-img{
       width: 100%;
@@ -505,7 +530,12 @@
     .about-title{
       text-align: center;
     }
-    
+    .join-pic{
+      height: 50vh;
+    }
+    .join-overlay{
+      height: 50vh;
+    }
     .join-text1{
       font-size: 24px;
     }
@@ -544,6 +574,13 @@
     .navbar-collapse{
       height: auto;
     }
+    .banner-pic{
+      height: 60vh;
+    }
+
+    .banner-pic .overlay{
+      height: 60vh;
+    }
     .golftext{
       font-size: 40px;
     }
@@ -555,6 +592,12 @@
     }
     .about-title{
       text-align: center;
+    }
+    .join-pic{
+      height: 50vh;
+    }
+    .join-overlay{
+      height: 50vh;
     }
     .join-text{
       font-size: 16px;
@@ -589,6 +632,13 @@
     .navbar-collapse{
       height: auto;
     }
+    .banner-pic{
+      height: 60vh;
+    }
+
+    .banner-pic .overlay{
+      height: 60vh;
+    }
     .golftext{
       font-size: 32.8px;
     }
@@ -612,6 +662,12 @@
     .icon-box{
       position: relative;
       padding-left: 1em;
+    }
+    .join-pic{
+      height: 50vh;
+    }
+    .join-overlay{
+      height: 50vh;
     }
     .join-box{
       padding: 48px 44px;
@@ -780,7 +836,7 @@
     .navbar-nav{
       width: 80%;
       position: relative;
-      left: 3.6em;
+      left: 4em;
       top: 0.1em;
     }
     .dropdown-menu{
@@ -857,8 +913,17 @@
       font-size: 14px;
       margin-top: 1.4em !important;
     }
+    .boder-top{
+      width: 14%;
+    }
+    .border-bottom{
+      width: 11%;
+    }
     .meet-text{
       font-size: 34px;
+    }
+    .meet-t{
+     display: inline;
     }
     .meet-text1{
       font-size: 15px;
@@ -925,7 +990,7 @@
     .navbar-nav{
       width: 80%;
       position: relative;
-      left: 3em;
+      left: 3.8em;
       top: 0.1em;
     }
     .dropdown-menu{
@@ -1006,8 +1071,17 @@
       font-size: 14px;
       margin-top: 1.4em !important;
     }
+    .boder-top{
+      width: 14%;
+    }
+    .border-bottom{
+      width: 11%;
+    }
     .meet-text{
       font-size: 34px;
+    }
+    .meet-t{
+     display: inline;
     }
     .meet-text1{
       font-size: 15px;
@@ -1146,7 +1220,7 @@
     .icon-text1{
       font-size: 12px;
     }
-     .join-pic{
+    .join-pic{
       height: 50vh !important;
     }
     .join-overlay{
@@ -1170,8 +1244,17 @@
       font-size: 13px;
       margin-top: 1.4em !important;
     }
+    .boder-top{
+      width: 14%;
+    }
+    .border-bottom{
+      width: 11%;
+    }
     .meet-text{
       font-size: 20px;
+    }
+    .meet-t{
+     display: inline;
     }
     .meet-text1{
       font-size: 13px;
@@ -1304,7 +1387,7 @@
     .icon-text1{
       font-size: 12px;
     }
-     .join-pic{
+    .join-pic{
       height: 60vh !important;
     }
     .join-overlay{
@@ -1328,8 +1411,17 @@
       font-size: 13px;
       margin-top: 1.4em !important;
     }
+    .boder-top{
+      width: 14%;
+    }
+    .border-bottom{
+      width: 11%;
+    }
     .meet-text{
       font-size: 20px;
+    }
+    .meet-t{
+     display: inline;
     }
     .meet-text1{
       font-size: 13px;
@@ -1346,7 +1438,7 @@
       width: 14%;
       height: 40px;
     }
-     .foot-text1{
+    .foot-text1{
       width: 100%;
     }
     .foot-box1{
