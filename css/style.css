@@ -54,18 +54,27 @@
 
   .banner-pic{
     width: 100%;
-    height: 90vh;
+    min-height: 100vh; /* responsive full height */
     position: relative;
     background-image: url("../images/b1.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
   }
-  .overlay{
-    width: 100%;
-    height: 90vh;
+  .banner-pic::after{
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 5, 0.397);
+    z-index: -1;
   }
   
   .containt{
@@ -186,28 +195,41 @@
   .join{
     width: 100%;
     height: auto;
-    margin-top: 18%;
+    overflow: hidden;
+    margin: auto;
   }
   .join-pic{
-    width: auto;
-    height: 80vh;
+    width: 100%;
+    min-height: 60vh; /* responsive full height */
     position: relative;
     background-image: url("../images/b2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
   }
-  .join-overlay{
-    width: 100%;
-    height: 80vh;
+  .join-overlay::after{
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.404);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 15px;
   }
   .join-box{
     border: 1px solid white;
     background-color: white;
-    padding: 68px 68px;
+    max-width: 700px;
+    padding: 20px;
     border-radius: 8px;
   }
   .join-text{
@@ -439,7 +461,7 @@
     }
   }
   
-  @media only screen and (max-width: 1080px) and (min-width: 992px){
+  @media only screen and (max-width: 1080px){
     .navbar{
      column-gap: 40% !important;
     }
@@ -477,22 +499,13 @@
     }
 
   }
-  @media only screen and (max-width: 1024.6px) and (min-width: 992px){
+  @media only screen and (max-width: 1024.6px){
     .banner-pic{
-      height: 50vh;
-    }
-    .banner-pic .overlay{
-      height: 50vh;
-    }
-   .join-pic{
-      height: 50vh;
-    }
-    .join-overlay{
-      height: 50vh;
+      min-height: 50vh;
     }
   }
 
-  @media only screen and (max-width: 991.8px) and (min-width: 880px){
+  @media only screen and (max-width: 991.8px){
   
     .navbar-toggler{
       position: relative;
@@ -515,26 +528,11 @@
     .containt{
       left: 20%;
     }
-
-    .banner-pic{
-      height: 60vh;
-    }
-
-    .banner-pic .overlay{
-      height: 60vh;
-    }
-   
     .about-img{
       width: 100%;
     }
     .about-title{
       text-align: center;
-    }
-    .join-pic{
-      height: 50vh;
-    }
-    .join-overlay{
-      height: 50vh;
     }
     .join-text1{
       font-size: 24px;
@@ -542,11 +540,9 @@
     .meet-text{
       font-size: 38px;
     }
-    footer{
-      height: auto;
-    }
+    
     .footer-copyright{
-      height: 14vh;
+      height: auto;
       padding: 16px 60px;
     }
     .foot-bx1{
@@ -561,7 +557,7 @@
     }
   }
 
-  @media only screen and (max-width: 879.9px) and (min-width: 768px){
+  @media only screen and (max-width: 879.9px){
     .navbar-toggler{
       position: relative;
       right: 4em;
@@ -573,13 +569,6 @@
     }
     .navbar-collapse{
       height: auto;
-    }
-    .banner-pic{
-      height: 60vh;
-    }
-
-    .banner-pic .overlay{
-      height: 60vh;
     }
     .golftext{
       font-size: 40px;
@@ -594,10 +583,7 @@
       text-align: center;
     }
     .join-pic{
-      height: 50vh;
-    }
-    .join-overlay{
-      height: 50vh;
+      min-height: 50vh;
     }
     .join-text{
       font-size: 16px;
@@ -616,7 +602,7 @@
     }
   }
   
-  @media only screen and (max-width: 767.9px) and (min-width: 620px){
+  @media only screen and (max-width: 767.9px){
     .navbar-toggler{
       position: relative;
       right: 3em;
@@ -631,13 +617,6 @@
     }
     .navbar-collapse{
       height: auto;
-    }
-    .banner-pic{
-      height: 60vh;
-    }
-
-    .banner-pic .overlay{
-      height: 60vh;
     }
     .golftext{
       font-size: 32.8px;
@@ -662,16 +641,6 @@
     .icon-box{
       position: relative;
       padding-left: 1em;
-    }
-    .join-pic{
-      height: 50vh;
-    }
-    .join-overlay{
-      height: 50vh;
-    }
-    .join-box{
-      padding: 48px 44px;
-      width: 60%;
     }
     .join-text{
       font-size: 14px;
@@ -711,7 +680,7 @@
     }
   }
 
-  @media only screen and (max-width: 619.9px) and (min-width: 571px){
+  @media only screen and (max-width: 619.9px){
     .navbar-toggler{
       position: relative;
       right: 3em;
@@ -757,10 +726,6 @@
     .icon-box{
       position: relative;
       padding-left: 2em;
-    }
-    .join-box{
-      padding: 48px 48px;
-      width: 60%;
     }
     .join-text{
       font-size: 12px;
@@ -818,7 +783,7 @@
     }
   }
 
-  @media only screen and (max-width: 570.9px) and (min-width: 470px){
+  @media only screen and (max-width: 570.9px){
    .navbar-toggler{
       position: relative;
       right: 2em;
@@ -845,14 +810,6 @@
     .navbar-collapse{
       height: auto;
     }
-
-    .banner-pic{
-      height: 60vh;
-    }
-    .banner-pic .overlay{
-      height: 60vh;
-    }
-
     .banner-pic .containt{
       width: 100% !important;
       padding: 1.4em !important;
@@ -889,27 +846,15 @@
     .icon-text1{
       font-size: 15px;
     }
-    .join-pic{
-      height: 54vh !important;
-    }
-    .join-overlay{
-      height: 54vh;
-    }
-    .join-box{
-      padding: 48px 18px;
-      width: 60%;
-    }
     .join-text{
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 0;
     }
     .join-text1{
-      font-size: 24px;
+      font-size: 20px;
       line-height: 28px;
     }
     .join-button{
-      padding: 8px 38px;
-      width: 60%;
       font-size: 14px;
       margin-top: 1.4em !important;
     }
@@ -972,7 +917,7 @@
       font-size: 14px;
     }
   }
-  @media only screen and (max-width: 469.9px) and (min-width: 340px){
+  @media only screen and (max-width: 469.9px){
     .navbar-toggler{
       position: relative;
       right: 2em;
@@ -998,19 +943,6 @@
     }
     .navbar-collapse{
       height: auto;
-    }
-
-    .banner-pic{
-      height: 60vh;
-    }
-
-    .banner-pic .overlay{
-      height: 60vh;
-    }
-    
-    .banner-pic .containt{
-      width: 100% !important;
-      padding: 1.4em !important;
     }
     .golftext{
       width: 100%;
@@ -1046,30 +978,6 @@
     }
     .icon-text1{
       font-size: 15px;
-    }
-    .join-pic{
-      height: 50vh !important;
-    }
-    .join-overlay{
-      height: 50vh !important;
-    }
-    .join-box{
-      padding: 48px 18px;
-      width: 80%;
-    }
-    .join-text{
-      font-size: 16px;
-      margin-bottom: 0;
-    }
-    .join-text1{
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .join-button{
-      padding: 8px 8px;
-      width: 60%;
-      font-size: 14px;
-      margin-top: 1.4em !important;
     }
     .boder-top{
       width: 14%;
@@ -1133,7 +1041,7 @@
     }
   }
  
-  @media only screen and (max-width: 339.9px) and (min-width: 260px){
+  @media only screen and (max-width: 369.9px){
    .navbar-toggler{
       position: relative;
       right: 1em;
@@ -1167,17 +1075,6 @@
     .navbar-collapse{
       height: auto;
     }
-    .banner-pic{
-      height: 60vh;
-    }
-    .banner-pic .overlay{
-      height: 60vh;
-    }
-
-    .banner-pic .containt{
-      width: 100% !important;
-      padding: 2em !important;
-    }
     .golftext{
       font-size: 18px;
     }
@@ -1186,8 +1083,6 @@
     }
     .golf-button{
       font-size: 14px;
-      width: 100%;
-      padding: 10px 0;
     }
     .golf-train{
       font-size: 16px;
@@ -1220,15 +1115,8 @@
     .icon-text1{
       font-size: 12px;
     }
-    .join-pic{
-      height: 50vh !important;
-    }
-    .join-overlay{
-      height: 50vh !important;
-    }
     .join-box{
-      padding: 48px 18px;
-      width: 80%;
+      min-width: 240px;
     }
     .join-text{
       font-size: 12px;
@@ -1239,10 +1127,7 @@
       line-height: 20px;
     }
     .join-button{
-      padding: 8px 8px;
-      width: 60%;
-      font-size: 13px;
-      margin-top: 1.4em !important;
+      font-size: 12px;
     }
     .boder-top{
       width: 14%;
@@ -1308,169 +1193,3 @@
     }
   }
 
-  @media only screen and (max-width: 266.8px){
-    .navbar{
-      column-gap: 0 !important;
-    }
-    .navbar-toggler{
-      position: relative;
-      right: 1em;
-    }
-    .navbar-brand{
-      font-size: 18px !important;
-      gap: 0;
-    }
-    .navbar-brand img{
-      width: 18%;
-      padding-right: 4px;
-    }
-    .nav-item{
-      font-size: 12px;
-    }
-    .dropdown-item{
-      font-size: 14px;
-    }
-    .navbar-toggler-icon{
-      font-size: 14px;
-    }
-    .navbar-nav{
-      width: 80%;
-      position: relative;
-      left: 2em;
-      top: 0.1em;
-    }
-    .dropdown-menu{
-      width: 90%;
-    }
-    .navbar-collapse{
-      height: auto;
-    }
-    .golftext{
-      font-size: 18px;
-    }
-    .golftext2{
-      font-size: 13px;
-    }
-    .golf-button{
-      font-size: 14px;
-      width: 100%;
-      padding: 10px 0;
-    }
-    .golf-train{
-      font-size: 16px;
-    }
-    .golf-train1{
-      font-size: 12px;
-    }
-    .about-img{
-      width: 100%;
-      height: auto;
-    }
-    .about-title{
-      font-size: 18px;
-      text-align: center;
-    }
-    .about-title1{
-      font-size: 15px;
-      text-align: center;
-    }
-    .about-txt{
-      font-size: 12px;
-    }
-    .icon-box{
-      position: relative;
-      padding-left: 0.8em;
-    }
-    .icon-text{
-      font-size: 15px;
-    }
-    .icon-text1{
-      font-size: 12px;
-    }
-    .join-pic{
-      height: 60vh !important;
-    }
-    .join-overlay{
-      height: 60vh !important;
-    }
-    .join-box{
-      padding: 48px 18px;
-      width: 80%;
-    }
-    .join-text{
-      font-size: 12px;
-      margin-bottom: 0;
-    }
-    .join-text1{
-      font-size: 15px;
-      line-height: 20px;
-    }
-    .join-button{
-      padding: 8px 8px;
-      width: 60%;
-      font-size: 13px;
-      margin-top: 1.4em !important;
-    }
-    .boder-top{
-      width: 14%;
-    }
-    .border-bottom{
-      width: 11%;
-    }
-    .meet-text{
-      font-size: 20px;
-    }
-    .meet-t{
-     display: inline;
-    }
-    .meet-text1{
-      font-size: 13px;
-      padding: 0.6em 0.8em 0 0.8em;
-    }
-    .meetbx-text{
-      font-size: 12px;
-    }
-    .meet-box1{
-      width: 90%;
-      margin-left: 0.8em;
-    }
-    .meetbx-img{
-      width: 14%;
-      height: 40px;
-    }
-    .foot-text1{
-      width: 100%;
-    }
-    .foot-box1{
-      padding: 1em;
-    }
-    .form-group, .btn{
-      width: 100%;
-    }
-    .op-list2, .op-list{
-      padding-top: 1%;
-      font-size: 14px;
-    }
-    .op-list1 .container{
-      padding-top: 1% !important;
-      font-size: 14px;
-    }
-    .foot-text1{
-      font-size: 15px;
-    }
-    .foot-text2{
-      margin-top: 2%;
-      font-size: 15px;
-    }
-    .foot-bx1{
-      flex-wrap: wrap;
-      text-align: center;
-    }
-    .icon-bx{
-      position: relative;
-      left: -1.4em;
-    }
-    .footbx-text{
-      font-size: 12px;
-    }
-  }
